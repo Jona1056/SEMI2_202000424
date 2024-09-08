@@ -36,7 +36,7 @@ En Visual Studio se utilizó la herramienta de Data Flow para realizar las trans
 <br> <br>
 ![Transformacion](./IMG/conversion1.png)<br>
 ![Transformacion](./IMG/conversion2.png)<br>
-![Transformacion](./IMG/conversion3.png)<br>
+![Transformacion](./IMG/Conversion3.png)<br>
 
 
 ### Carga
