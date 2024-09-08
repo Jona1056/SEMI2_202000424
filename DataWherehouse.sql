@@ -1,4 +1,4 @@
--- Crear la tabla DimProveedor con la clave primaria 'codigo'
+
 CREATE TABLE DimProveedor (
     codigo VARCHAR(150) PRIMARY KEY, 
     nombre VARCHAR(150) NOT NULL,
@@ -7,7 +7,7 @@ CREATE TABLE DimProveedor (
     web CHAR(1) NULL
 );
 
--- Crear la tabla DimCliente con la clave primaria 'codigo'
+
 CREATE TABLE DimCliente (
     codigo VARCHAR(150) PRIMARY KEY,
     nombre VARCHAR(150) NOT NULL,
@@ -16,7 +16,7 @@ CREATE TABLE DimCliente (
     numero VARCHAR(150) NULL
 );
 
--- Crear la tabla DimProducto con la clave primaria 'codigo'
+
 CREATE TABLE DimProducto (
     codigo VARCHAR(150) PRIMARY KEY,
     nombre VARCHAR(150) NOT NULL,
@@ -24,7 +24,7 @@ CREATE TABLE DimProducto (
     categoria VARCHAR(150) NOT NULL
 );
 
--- Crear la tabla DimSucursal con la clave primaria 'codigo'
+
 CREATE TABLE DimSucursal (
     codigo VARCHAR(150) PRIMARY KEY,
     nombre VARCHAR(150) NOT NULL,
@@ -33,14 +33,14 @@ CREATE TABLE DimSucursal (
     departamento VARCHAR(150) NOT NULL
 );
 
--- Crear la tabla DimVendedor con la clave primaria 'codigo'
+
 CREATE TABLE DimVendedor (
     codigo VARCHAR(150) PRIMARY KEY,
     nombre VARCHAR(150) NOT NULL,
     vacacionista BIT NOT NULL
 );
 
--- Crear la tabla FactCompra referenciando los códigos de las dimensiones
+
 CREATE TABLE FactCompra (
     id INT PRIMARY KEY IDENTITY(1,1),
     codigo_proveedor VARCHAR(150) FOREIGN KEY REFERENCES DimProveedor(codigo),
@@ -51,7 +51,7 @@ CREATE TABLE FactCompra (
     costo_unitario DECIMAL(10, 2) NOT NULL
 );
 
--- Crear la tabla FactVenta referenciando los códigos de las dimensiones
+
 CREATE TABLE FactVenta (
     id INT PRIMARY KEY IDENTITY(1,1),
     codigo_cliente VARCHAR(150) FOREIGN KEY REFERENCES DimCliente(codigo),
