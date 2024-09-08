@@ -18,7 +18,7 @@ Se extrajo la información de las compras y ventas de los archivos `SGFood01.com
 
 **Archivo de texto plano:**  
 Se extrajo la información de las compras y ventas de los archivos `SGFood03.comp` y `SGFood03.vent` directamente mediante las herramientas de Visual Studio<br>
-![Carga SQLServer](./img/cargasql3.png)<br>
+![Carga SQLServer](./IMG/cargasql3.png)<br>
 ### Transformación
 Los datos fueron analizados y limpiados y transformados para que cumplan con las necesidades del modelo de datos. Se realizaron las siguientes transformaciones:
 - Eliminación de registros duplicados.	
@@ -34,9 +34,9 @@ En Visual Studio se utilizó la herramienta de Data Flow para realizar las trans
 - **Sort:** Se utilizó para ordenar los registros.
 
 <br> <br>
-![Transformacion](./img/conversion1.png)<br>
-![Transformacion](./img/conversion2.png)<br>
-![Transformacion](./img/conversion3.png)<br>
+![Transformacion](./IMG/conversion1.png)<br>
+![Transformacion](./IMG/conversion2.png)<br>
+![Transformacion](./IMG/conversion3.png)<br>
 
 
 ### Carga
@@ -44,22 +44,22 @@ Se crearon las tablas de dimensiones y hechos del Data Warehouse en una base de 
 
 En Visual Studio  se utilizó la herramienta de Data Flow para realizar la carga de los datos. 
 <br> <br>
-![Carga](./img/cargas.png)<br>
+![Carga](./IMG/cargas.png)<br>
 
 ### Flujo General
 - Tablas de Dimensiones
 <br>
 
-![Flujo](./img/dimensiones.png)
+![Flujo](./IMG/dimensiones.png)
 <br>
 - Tablas de Hechos
 <br>
 
-![Flujo](./img/hechos.png)
+![Flujo](./IMG/hechos.png)
 <br>
 
 ## Modelo Implementado Data Warehouse
-![Modelo](./img/Dw.png)
+![Modelo](./IMG/Dw.png)
 Se utilizó el modelo constelación para el diseño del Data Warehouse, el cual consiste en un modelo Constelacion con 2 tablas de hechos y varias tablas de dimensiones.
 
 La razón principal por la que se utilizó el modelo de constelación para el diseño del Data Warehouse es que ofrece flexibilidad y escalabilidad, permitiendo gestionar múltiples procesos de negocio en un único esquema de almacenamiento de datos. En este caso, al manejar tanto ventas como compras, el modelo de constelación es ideal porque permite la creación de dos tablas de hechos (una para ventas y otra para compras), que están relacionadas con un conjunto compartido de tablas de dimensiones.
