@@ -59,7 +59,7 @@ En Visual Studio  se utilizó la herramienta de Data Flow para realizar la carga
 <br>
 
 ## Modelo Implementado Data Warehouse
-![Modelo](./IMG/Dw.png)
+![Modelo](./IMG/dw.png)
 Se utilizó el modelo constelación para el diseño del Data Warehouse, el cual consiste en un modelo Constelacion con 2 tablas de hechos y varias tablas de dimensiones.
 
 La razón principal por la que se utilizó el modelo de constelación para el diseño del Data Warehouse es que ofrece flexibilidad y escalabilidad, permitiendo gestionar múltiples procesos de negocio en un único esquema de almacenamiento de datos. En este caso, al manejar tanto ventas como compras, el modelo de constelación es ideal porque permite la creación de dos tablas de hechos (una para ventas y otra para compras), que están relacionadas con un conjunto compartido de tablas de dimensiones.
